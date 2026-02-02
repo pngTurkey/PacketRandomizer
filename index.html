@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Packet Randomizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Seed Packet Randomizer</h1>
+        <div class="controls">
+            <button id="showAllBtn">Select Plant Packets</button>
+            <button id="newBtn">Packet Randomizer</button>
+        </div>
+        <div id="selectionView" class="view">
+            <div id="familyFilters" class="family-filters"></div>
+            <div id="plantGrid" class="plant-grid"></div>
+        </div>
+        <div id="randomizerView" class="view active">
+            <div class="randomizer-grid">
+                <div class="randomizer-cell" data-cell="0"></div>
+                <div class="randomizer-cell" data-cell="1"></div>
+                <div class="randomizer-cell" data-cell="2"></div>
+                <div class="randomizer-cell" data-cell="3"></div>
+                <div class="randomizer-cell" data-cell="4"></div>
+                <div class="randomizer-cell" data-cell="5"></div>
+                <div class="randomizer-cell" data-cell="6"></div>
+                <div class="randomizer-cell" data-cell="7"></div>
+            </div>
+            <div class="level-toggle-container">
+                <label class="level-toggle">
+                    <span>BWB Level</span>
+                    <input type="checkbox" id="bwbLevelToggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            <button id="getPacketsBtn">Get Packets</button>
+            <div class="required-families-container">
+                <div id="requiredFamilies" class="required-families"></div>
+                <button id="clearFamiliesBtn" class="clear-families-btn">Clear</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
